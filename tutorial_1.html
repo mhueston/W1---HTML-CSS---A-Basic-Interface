@@ -4,61 +4,66 @@
         <meta name="author" content="Dr. Eleanor Gaye" />
         <title>Awesome science application correspondence</title>
     </head>
-    <body>
-        <address class="sender-column">
-            <strong>Dr. Eleanor Gaye</strong><br />
-            Awesome Science faculty<br />
-            University of Awesome<br />
-            Bobtown, CA 99999,<br />
-            USA<br />
-            <strong>Tel</strong>: 123-456-7890<br />
-            <strong>Email</strong>: no_reply@example.com
-        </address>
+    <body class="letter-document">
+        <header class ="letter-header">
+            <address class="sender-info">
+                <strong>Dr. Eleanor Gaye</strong><br />
+                Awesome Science faculty<br />
+                University of Awesome<br />
+                Bobtown, CA 99999,<br />
+                USA<br />
+                <strong>Tel</strong>: 123-456-7890<br />
+                <strong>Email</strong>: no_reply@example.com
+            </address>
+            
+            <p class="letter-date">
+                <time datetime="2016-01-20">20 January 2016</time>
+            </p>
+            
+            <address class="recipient-info">
+                <strong>Miss Eileen Dover</strong><br />
+                4321 Cliff Top Edge<br />
+                Dover, CT9 XXX<br />
+                UK
+            </address>
+        </header>
         
-        <p class="sender-column">
-            <time datetime="2016-01-20">20 January 2016</time>
-        </p>
+        <h1 class="letter-subject">Re: Eileen Dover university application</h1>
         
-        <address>
-            <strong>Miss Eileen Dover</strong><br />
-            4321 Cliff Top Edge<br />
-            Dover, CT9 XXX<br />
-            UK
-        </address>
+        <p class="letter-paragraph">Dear Eileen,</p>
         
-        <h1>Re: Eileen Dover university application</h1>
-        
-        <p>Dear Eileen,</p>
-        
-        <p>
+        <p class="letter-paragraph">
             Thank you for your recent application to join us at the University of
             Awesome's science faculty to study as part of your
             <abbr title="Doctor of Philosophy">PhD</abbr> next year. I will answer
             your questions one by one, in the following sections.
         </p>
-        
-        <h2>Starting dates</h2>
 
-        <p>
-            We are happy to accommodate you starting your study with us at
-            <em>any time</em>, however it would suit us better if you could start at
-            the beginning of a semester; the start dates for each one are as follows:
-        </p>
-        
-        <ul>
-            <li>First semester: <time datetime="2016-09-09">9 September 2016</time></li>
-            <li>Second semester: <time datetime="2017-01-15">15 January 2017</time></li>
-            <li>Third semester: <time datetime="2017-05-02">2 May 2017</time></li>
-        </ul>
+        <section class="content-section">
+            <h2>Starting dates</h2>
+            
+            <p>
+                We are happy to accommodate you starting your study with us at
+                <em>any time</em>, however it would suit us better if you could start at
+                the beginning of a semester; the start dates for each one are as follows:
+            </p>
+            
+            <ul>
+                <li>First semester: <time datetime="2016-09-09">9 September 2016</time></li>
+                <li>Second semester: <time datetime="2017-01-15">15 January 2017</time></li>
+                <li>Third semester: <time datetime="2017-05-02">2 May 2017</time></li>
+            </ul>
+            
+            <p>
+                Please let me know if this is ok, and if so which start date you would
+                prefer.
+            </p>
+        </section>
 
-        <p>
-            Please let me know if this is ok, and if so which start date you would
-            prefer.
-        </p>
-        
-        <h2>Subjects of study</h2>
-        
-        <p>
+        <section class="content-section">
+            <h2>Subjects of study</h2>
+            
+            <p>
             <ol>
                 <li>
                     Turning H<sub>2</sub>O into wine, and the health benefits of
@@ -82,7 +87,9 @@
                 including how long you'd expect the research to take, required staff and
                 other resources, and anything else you think we'd need to know? Thanks.
             </p>
-            
+        </section>
+
+        <section class="content-section">
             <h2>Exotic dance moves</h2>
             
             <p>
@@ -118,7 +125,9 @@
                     really cold.
                 </dd>
             </dl>
-            
+        </section>
+
+        <footer class="letter-closing">
             <p>Yours sincerely,</p>
             
             <p>Dr Eleanor Gaye</p>
@@ -128,5 +137,6 @@
                 The memoirs of Bill S Preston,
                 <abbr title="Esquire">Esq.</abbr>
             </p>
+        </footer>
     </body>
 </html>
